@@ -17,8 +17,8 @@ env:
   DEVICE: holi
   DT_LINK: https://github.com/Spector0/device_qualcomm_holi-twrp.git
   DT_PATH: device/qualcomm/holi
-  TARGET: recoveryimage
-  OUTPUT: recovery.img
+  TARGET: bootimage
+  OUTPUT: boot.img
 
 jobs:
   build:
