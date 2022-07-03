@@ -62,13 +62,10 @@ jobs:
          run: |
               cd work
               . build/envsetup.sh &&lunch twrp_$DEVICE-eng &&export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET
-              sudo apt update && sudo apt install zip
-              sudo apt update && sudo apt install zip
-              zip -r rec.zip /home/runner/work/Recovery-Builder/Recovery-Builder/work/out/target/product/holi/boot.img
-             
+              
        - name: Save
          uses: actions/upload-artifact@v3
          with:
-            name: Twrp-12.1
-            path: /home/runner/work/Recovery-Builder/Recovery-Builder/work/rec.zip
+            name: boot
+            path: /home/runner/work/Recovery-Builder/Recovery-Builder/work/out/target/product/holi/boot.img
             retention-days: 5
