@@ -21,8 +21,6 @@ env:
   OUTPUT: boot.img
 
 jobs:
-       - name: GitHub Actions Cleaner
-         uses: rokibhasansagar/slimhub_actions@v3
 
   build:
     runs-on: ubuntu-18.04
