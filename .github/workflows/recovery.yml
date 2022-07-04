@@ -21,6 +21,9 @@ env:
   OUTPUT: boot.img
 
 jobs:
+       - name: GitHub Actions Cleaner
+         uses: rokibhasansagar/slimhub_actions@v3
+
   build:
     runs-on: ubuntu-18.04
 
@@ -67,5 +70,5 @@ jobs:
          uses: actions/upload-artifact@v3
          with:
             name: boot
-            path: /home/runner/work/Recovery-Builder/Recovery-Builder/work/out/target/product/holi/boot.img
+            path: /home/runner/work/Recovery-Builder/Recovery-Builder/work/boot.img
             retention-days: 5
