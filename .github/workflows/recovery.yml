@@ -6,7 +6,7 @@ on:
       MANIFEST_URL:
         description: 'MANIFEST_URL'
         required: true
-        default: 'git@github.com:minimal-manifest-twrp/platform_manifest_twrp_aosp.git'
+        default: 'https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git'
       MANIFEST_BRANCH:
         description: 'MANIFEST_BRANCH'
         required: true
@@ -14,27 +14,27 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/TeamWin/android_device_asus_I003D'
+        default: 'https://github.com/Spector0/device_qualcomm_holi-twrp'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'android-12.1'
+        default: 'main'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/asus/I003D'
+        default: 'device/qualcomm/holi'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'I003D'
+        default: 'holi'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_I003D'
+        default: 'twrp_holi'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
-        default: 'recovery'
+        default: 'boot'
 
 jobs:
   build:
