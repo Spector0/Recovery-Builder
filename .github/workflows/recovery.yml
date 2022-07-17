@@ -34,7 +34,7 @@ on:
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
-        default: 'boot'
+        default: 'vendorboot'
 
 jobs:
   build:
@@ -129,7 +129,7 @@ jobs:
         lunch ${{ github.event.inputs.MAKEFILE_NAME }}-eng
         export ALLOW_MISSING_DEPENDENCIES=true
         make clean
-        make ${{ github.event.inputs.BUILD_TARGET }}image -j$(nproc --all)        
+        mka ${{ github.event.inputs.BUILD_TARGET }}image -j$(nproc --all)        
       
     - name: Upload to Release
       uses: softprops/action-gh-release@v1
