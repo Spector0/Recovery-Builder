@@ -14,15 +14,15 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/Spector0/android_device_qualcomm_oscar_TWRP'
+        default: 'https://github.com/Spector0/Device_Oneplus_Oscar_TWRP'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'main'
+        default: 'Alpha_1'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/qualcomm/oscar'
+        default: 'device/oneplus/oscar'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
