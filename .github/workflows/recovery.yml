@@ -134,7 +134,10 @@ jobs:
     - name: Upload to Release
       uses: softprops/action-gh-release@v1
       with:
-        files: workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/${{ github.event.inputs.BUILD_TARGET }}.img
+        run: |
+             cd workspace/out/target/product/oscar
+             sudo zip -r9 TWRP_oscar.zip boot.img
+        files: workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/TWRP_oscar.zip
         name: ${{ github.event.inputs.DEVICE_NAME }}-TWRP_Alpha
         tag_name: ${{ github.run_id }}
         body: |
