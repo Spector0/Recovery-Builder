@@ -14,23 +14,23 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/Spector0/device_qualcomm_holi-twrp'
+        default: 'https://github.com/Spector0/Device_Oneplus_Oscar_TWRP'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'main'
+        default: 'test'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/qualcomm/holi'
+        default: 'device/qualcomm/oscar'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'holi'
+        default: 'oscar'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_holi'
+        default: 'twrp_oscar'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
