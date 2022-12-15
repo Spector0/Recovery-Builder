@@ -14,7 +14,7 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/Spector0/Device_Oneplus_Oscar_TWRP'
+        default: 'https://github.com/Lctsolutions/Device_Oneplus_Oscar_TWRP'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
