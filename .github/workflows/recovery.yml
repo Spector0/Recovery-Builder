@@ -18,7 +18,7 @@ on:
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'Alpha_1'
+        default: 'Stable_V2'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
