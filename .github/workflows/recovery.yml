@@ -119,7 +119,6 @@ jobs:
         PATH=~/bin:$PATH
         cd ${{ steps.pwd.outputs.pwd }}
         source build/envsetup.sh
-        repopick 5405 5540
 
     - name: Building recovery
       run: |
