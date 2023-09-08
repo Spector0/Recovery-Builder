@@ -4,15 +4,15 @@ on:
   workflow_dispatch:
     inputs:
       MANIFEST_URL:
-        description: 'MANIFEST_URL'
+        description: '/storage/emulated/0/TWRP/recovery.img'
         required: true
         default: 'https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git'
       MANIFEST_BRANCH:
-        description: 'MANIFEST_BRANCH'
+        description: 'sparten'
         required: true
         default: 'twrp-12.1'
       DEVICE_TREE_URL:
-        description: 'DEVICE_TREE_URL'
+        description: 'https://github.com/RealmeGTNeo3T-Devs/android_kernel_realme_spartan'
         required: true
         default: 'https://github.com/Spector0/Device_Oneplus_Oscar_TWRP'
       DEVICE_TREE_BRANCH:
@@ -20,21 +20,21 @@ on:
         required: true
         default: 'Stable_V2'
       DEVICE_PATH:
-        description: 'DEVICE_PATH'
+        description: /storage/emulated/0/Download'
         required: true
-        default: 'device/oneplus/oscar'
+        default: 'device/realme/neo 3t'
       DEVICE_NAME:
-        description: 'DEVICE_NAME'
+        description: 'realme'
         required: true
         default: 'oscar'
       MAKEFILE_NAME:
-        description: 'MAKEFILE_NAME'
+        description: 'recovery'
         required: true
         default: 'twrp_oscar'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
-        default: 'boot'
+        default: 'recovery'
 
 jobs:
   build:
